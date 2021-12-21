@@ -22,7 +22,7 @@ The GS team decided a web based application would be most efficient, and users h
 
 ### Solution
 My solution consists of three parts: the Python script to manipulate database from command line with full user access privileges; the web application that reads data from database and illustrates certain queries through a chart and geolocation map; and the Python module that is imported to the script and web application to support function for accessing and manipulating the database.
-#### [Web Application](../Python/DB_Dashboard.py)
+#### [Web Application](/Python/DB_Dashboard.py)
 The primary use case for this system is a browser based dashboard that will display database data, as well as query options for finding animals for each specific type of service (water rescue, wilderness rescue, and tracking).  In addition to implementing the provided Python module to utilize the read function, the service filters are supplied by the following MongoDB queries:
 ```python
 # Water Rescue 
