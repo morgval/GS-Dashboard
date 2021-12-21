@@ -65,10 +65,10 @@ The primary use case for this system is a browser based dashboard that will disp
 ```
 The dashboard uses Plotly Dash and Dash Leaflet to display and populate a Data Table, a pie chart with the percentage of each breed available based on the query, and a map that shows the location of the dogs in the search (IN DEVELOPMENT: I want to implement a selected rows callback to focus on one record of the map at a time).
 
-#### [Script](../Python/DBMscript.py)
+#### [Script](/Python/DBMscript.py)
 Every database needs a method for users to create, find, modify, and remove records.  For security purposes, GS requires their primary database functions (CRUD) to be limited to local operation and not web based.  Our solution is a command line script that can be run by GS administrators.  The script also imports the Python CRUD module to perform these functions on the database, while also prompting them to create the data they need to enter.  This is more efficient for GS as they do not need to train their administrators in MongoDB querying, only provide required documentation for this program.
 
-#### [Python Module](../Python/CRUDmodule.py)
+#### [Python Module](/Python/CRUDmodule.py)
 In addition to outlining CRUD functions, the Python module ensures proper user access to database by taking in username and password data for authentication.  It also supports handling for the following common user errors:
 | Phase	| Error	| Reason |
 | ----- | ----- | ------ |
@@ -111,9 +111,9 @@ This will import the database documents and make the Mongo server functional loc
 #### Indexing
 As this data set is only 10,000 documents, indexing isn't absolutely necessary.  There is very little difference in performance, but I will be writing a blog post (coming soon) and indexing in MongoDB using this collection, if interested in seeing the indexes used on this project.
 
-### [Jupyter](../Jupyter/ProjectTwoDashboard.ipynb)
+### [Jupyter](/Jupyter/ProjectTwoDashboard.ipynb)
 During the course CS-340, we developed this application using Jupyter Notebook, a programming collaboration software that can be used similarly to an IDE and debugger, with container like properties.  
-This project gives you the ability to download the project notebook, run the Jupyter notebook locally, upload the CRUD function file, and play with it for yourself.  As I do not have a ton of experience with this (and, really, the experts explain it best), you can read more about how to do that [here](https://jupyter.readthedocs.io/en/latest/running.html).
+This project gives you the ability to download the project notebook, run the Jupyter notebook locally, upload the CRUD function file and requirements, and play with it for yourself.  As I do not have a ton of experience with this (and, really, the experts explain it best), you can read more about how to do that [here](https://jupyter.readthedocs.io/en/latest/running.html).
 
 ## DBMscript
 Admins can run DBMscript from the command line: 
