@@ -1,7 +1,7 @@
-[Company Synopsis](#company-synopsis)
-[Project Synopsis](#project-synopsis)
-[Setting Up](#setting-up)
-[Script Reference](#DBMscript)
+[Company Synopsis](#company-synopsis)  
+[Project Synopsis](#project-synopsis)  
+[Setting Up](#setting-up)  
+[Script Reference](#DBMscript)  
 
 In progress:
 - [ ] fixing SchemaValidationError
