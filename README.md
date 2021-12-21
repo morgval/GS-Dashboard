@@ -24,7 +24,7 @@ The GS team decided a web based application would be most efficient, and users h
 My solution consists of three parts: the Python script to manipulate database from command line with full user access privileges; the web application that reads data from database and illustrates certain queries through a chart and geolocation map; and the Python module that is imported to the script and web application to support function for accessing and manipulating the database.
 #### [Web Application](../Python/DB_Dashboard.py)
 The primary use case for this system is a browser based dashboard that will display database data, as well as query options for finding animals for each specific type of service (water rescue, wilderness rescue, and tracking).  In addition to implementing the provided Python module to utilize the read function, the service filters are supplied by the following MongoDB queries:
-'''python
+```python
 # Water Rescue 
   {"$and": [
       {"sex_upon_outcome":"Intact Female"},
@@ -62,7 +62,7 @@ The primary use case for this system is a browser based dashboard that will disp
            {"breed":"Rottweiler"}
       ]}
   ]}
-'''
+```
 The dashboard uses Plotly Dash and Dash Leaflet to display and populate a Data Table, a pie chart with the percentage of each breed available based on the query, and a map that shows the location of the dogs in the search (IN DEVELOPMENT: I want to implement a selected rows callback to focus on one record of the map at a time).
 
 #### [Script](../Python/DBMscript.py)
@@ -94,18 +94,18 @@ You will want to install the following Mongo packages:
 
 #### MongoImport CSV
 After creating C:\data\db and downloading the CSV file, we need to run the Mogno server and import the file to populate the database.  Navigate to C:\Program Files\MongoDB\Server\*MongoVersion*\bin and execute:
-'''
+```
 mongod.exe
-'''
+```
 NOTE: PowerShell users may need to add ".\" to the front of their commands.
 After a few minutes, restart the terminal window and navigate back to the same path and test the server is running with:
-'''
+```
 mongo.exe
-'''
+```
 This will launch a version of the mongo shell.  You can use the "show dbs" command to see available databases, and "exit" to return to terminal.  After returning to the terminal, navigate to C:\Program Files\MongoDB\Tools\*MongoVersion*\bin and execute:
-'''
+```
 mongoimport --db=AAC --collection=animals --type=csv --headerline --file=C:\data\db\aac_shelter_outcomes.csv
-'''
+```
 This will import the database documents and make the Mongo server functional locally.
 
 #### Indexing
@@ -118,15 +118,15 @@ This project gives you the ability to download the project notebook, run the Jup
 ## DBMscript
 Admins can run DBMscript from the command line: 
 In Windows:
-'''
+```
 DBMscript.py
-'''
+```
 In Linux:
-'''
+```
 python3 DBMscript.py
-'''
+```
 To update data, reference the following Python dictionary as a template for the keys available to update in the documents in this collection:
-'''python
+```python
 {"age_upon_outcome" : age,
   "animal_id" : ID,
   "animal_type" : animalType,
@@ -140,4 +140,4 @@ To update data, reference the following Python dictionary as a template for the 
   "sex_upon_outcome" : sex,
   "age_upon_outcome_in_weeks" : ageInWeeks
   }
-'''
+```
