@@ -1,9 +1,0 @@
-dash==2.0.0
-dash-leaflet==0.1.23
-dash-extensions==0.0.65
-jupyter-dash==0.4.0
-jupyter-plotly-dash==0.4.3
-pandas==1.3.5
-numpy==1.21.5
-pymongo==3.9.0
-plotly==5.4.0
