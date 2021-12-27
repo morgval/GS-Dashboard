@@ -4,7 +4,7 @@ from CRUDmodule import AnimalShelter
 def main():
     # DICTIONARY STRUCTURE FOR AAC
     # data = {"age_upon_outcome" : age,
-    #         "animal_id" : ID,
+    #         "animal_id" : animalID,
     #         "animal_type" : animalType,
     #         "breed" : breed,
     #         "color" : color,
@@ -34,7 +34,7 @@ def main():
             outcomeType = input("Enter outcome type: ")
             subtype = input("Enter outcome subtype: ")
             data = {"age_upon_outcome" : age,
-                     "animal_id" : ID,
+                     "animal_id" : animalID,
                      "animal_type" : animalType,
                      "breed" : breed,
                      "color" : color,
@@ -55,10 +55,10 @@ def main():
             return read(data)
 
         elif chosenFunc == 'U':
-            ID = input("Enter the ID of the record you want to update: ")
+            animalID = input("Enter the ID of the record you want to update: ")
             newKey = input("Enter the property you want to update (please reference documentation): ")
             newValue = input("Enter the value you want to change it to: ")
-            data = { "animal_id" : ID }
+            data = { "animal_id" : animalID }
             if newKey or newValue is None:
                 newData is None
             else:
@@ -66,8 +66,8 @@ def main():
             return update(data, newData)
 
         elif chosenFunc == 'D':
-            ID = input("Enter the ID of the record you want to delete: ")
-            data = { "animal_id" : ID }
+            animalID = input("Enter the ID of the record you want to delete: ")
+            data = { "animal_id" : animalID }
             return delete(data)
 
     else:
