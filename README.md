@@ -83,10 +83,12 @@ In addition to outlining CRUD functions, the Python module ensures proper user a
 
 
 ## Setting Up
+Download Jupyter folder for local use and the Python folder for the actual Python package.  Each folder contains the requirements file required to run and download dependencies.  After appropriate dependencies are installed, proceed with setting up the Mongo Server.
+
 ### Running the Mongo Server
 For this application, we used the document-oriented database program MongoDB.  I have simply utilized the free, open-source community version to run locally.  This README assumes operation on Windows 10, but you can email me if you would like directions for installing on Linux Ubuntu.
 #### Installation
-You will want to install the following Mongo packages:
+You will also want to install the following Mongo packages:
 * [MongoDB Community Server](https://www.mongodb.com/try/download/community) 
 * [MongoDB Tools](https://www.mongodb.com/try/download/tools)
 * [MongoDB Shell](https://www.mongodb.com/try/download/tools) - this one is not so necessary to download unless users will be accessing the database directly and not through the Python module provided.
