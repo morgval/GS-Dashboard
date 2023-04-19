@@ -4,8 +4,9 @@
 [Script Reference](#DBMscript)  
 
 In progress:
-- [ ] fixing SchemaValidationError
-- [ ] adding selected rows callback
+- [X] fixing SchemaValidationError
+- [X] adding selected rows callback
+- [ ] JupyterDash link broken
 
 # Grazioso Salvare Animal Serivces
 ## Company Synopsis
