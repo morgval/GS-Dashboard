@@ -1,3 +1,6 @@
+# This module initiates the MongoClient authentication, and
+# defines the Create(), Read(), Update(), and Delete() and handles possible errors
+# READ() is used in the DBMscript in order to populate Database data
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from bson.json_util import dumps
