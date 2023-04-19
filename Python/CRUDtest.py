@@ -1,3 +1,4 @@
+# Unit tests run in JupyterDash to test the CRUDmodule
 import unittest
 
 from CRUDmodule.py import create, read, update, delete
@@ -16,8 +17,9 @@ class TestCR(unittest.TestCase):
             "outcome_type" : "",
             "sex_upon_outcome" : "Spayed Female",
              "age_upon_outcome_in_weeks" : "164 weeks"
-             }
-    key = {"animal_id" : "XY3028"}
+             },
+             
+    key = {"animal_id" : "XY3028"},
 
     #CREATE - tests if sample data was created
     def test_create(self, data):
